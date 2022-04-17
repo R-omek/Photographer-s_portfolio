@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="icon" href="assets/svg/portfolio-favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="header_logo"></div>
+                <div>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a data-i18="skills" href="#skills">Skills</a></li>
+                            <li><a data-i18="portfolio" href="#portfolio">Portfolio</a></li>
+                            <li><a data-i18="video" href="#video">Video</a></li>
+                            <li><a data-i18="price" href="#price">Price</a></li>
+                            <li><a data-i18="contacts" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="switch-lng"><li class="en" >en</li><li class="slash_en_ru">/</li><li class="ru">ru</li></ul>
+                    <div id="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#skills">Skills</a></li>
+                            <li><a class="menu__item" href="#portfolio">Portfolio</a></li>
+                            <li><a class="menu__item" href="#video">Video</a></li>
+                            <li><a class="menu__item" href="#price">Price</a></li>
+                            <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <label id="switch-theme" class="switch-theme">
+                    <input type="checkbox" id="switcher-of-theme">
+                </label>            
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section-hero">
+                <div class="hero_title" data-i18="hero-title"><h1>Alexa Rise</h1></div>
+                <div class="hero_text" data-i18="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</div>
+                <button class="hero_button" data-i18="hire">Hire me</button>
+            </section>
+            <section id="skills" class="section-skills">
+                <h2 class="skills-title txt_color" data-i18="skills" style="margin-top: 0;">Skills</h2>
+                <div class="skills-items">
+                    <div class="skill-item">
+                        <h3 class="txt_color">Digital photography</h3>
+                        <p class="txt_color">High-quality photos in the studio and on the nature</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="txt_color">Video shooting</h3>
+                        <p class="txt_color">Capture your moments so that they always stay with you</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="txt_color">Retouch</h3>
+                        <p class="txt_color">I strive to make photography surpass reality</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="txt_color">Audio</h3>
+                        <p class="txt_color">Professional sounds recording for video, advertising, portfolio</p>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section-portfolio">
+                <h2 class="portfolio-title txt_color" style="margin-top: 0;">Portfolio</h2>
+                <div class="portfolio_buttons">
+                    <button class="portfolio-btn-winter">Winter</button>
+                    <button class="portfolio-btn-spring">Spring</button>
+                    <button class="portfolio-btn-summer">Summer</button>
+                    <button class="portfolio-btn-autumn">Autumn</button>
+                </div>
+                <div class="portfolio_photos">
+                    <img class="portfolio-image" src="assets/img/section-portfolio/portfolio-img.jpg" alt="first-photo">
+                    <img class="portfolio-image" src="assets/img/section-portfolio/portfolio-img(1).jpg" alt="second-photo">
+                    <img class="portfolio-image" src="assets/img/section-portfolio/portfolio-img(2).jpg" alt="third-photo">
+                    <img class="portfolio-image" src="assets/img/section-portfolio/portfolio-img(3).jpg" alt="fourth-photo">
+                    <img class="portfolio-image" src="assets/img/section-portfolio/portfolio-img(4).jpg" alt="fiveth-photo">
+                    <img class="portfolio-image" src="assets/img/section-portfolio/portfolio-img(5).jpg" alt="sixth-photo">
+                </div>
+            </section>
+            <section id="video" class="section-video">
+                <h2 class="video-title txt_color">Video</h2>
+                <div class="video-container">
+                    <img class="video_image" src="assets/img/section-video/video-player.jpg" alt="video-photo">
+                    <button class="video_button">
+                        <img src="assets/svg/video-section/Play_hover.svg" alt="play">
+                    </button>
+                </div>
+            </section>
+            <section id="price" class="section-price">
+                <h2 class="price-title txt_color" style="margin-top: 0;">Price</h2>
+                <div class="price-container">
+                <div class="standard_price">
+                    <h3 class="price_titles txt_color">Standard</h3>
+                    <div class="price_blocks">500 $</div>
+                    <span class="txt_color">One location</span>
+                    <span class="txt_color">120 photos in color</span>
+                    <span class="txt_color">12 photos in retouch</span>
+                    <span class="txt_color">Readiness 2-3 weeks</span>
+                    <span class="txt_color">Make up, visage</span>
+                    <button class="price_buttons">Order shooting</button>
+                </div>
+                <div class="premium_price">
+                    <h3 class="price_titles txt_color">Premium</h3>
+                    <div class="price_blocks">700 $</div>
+                    <span class="txt_color">One or two locations</span>
+                    <span class="txt_color">200 photos in color</span>
+                    <span class="txt_color">20 photos in retouch</span>
+                    <span class="txt_color">Readiness 1-2 weeks</span>
+                    <span class="txt_color">Make up, visage</span>
+                    <button class="price_buttons">Order shooting</button>
+                </div>
+                <div class="gold_price">
+                    <h3 class="price_titles txt_color">Gold</h3>
+                    <div class="price_blocks">1000 $</div>
+                    <span class="txt_color">Three locations or more</span>
+                    <span class="txt_color">300 photos in color</span>
+                    <span class="txt_color">50 photos in retouch</span>
+                    <span class="txt_color">Readiness 1 week</span>
+                    <span class="txt_color">Make up, visage, hairstyle</span>
+                    <button class="price_buttons">Order shooting</button>
+                </div>
+            </div>
+            </section>
+            <section id="contacts" class="contacts-section">
+                <div class="contacts-container">
+                    <h2 class="contacts_title">Contact me</h2>
+                    <input class="input_email" type="email" placeholder="E-mail"><br>
+                    <input class="input_tel" type="tel" placeholder="Phone">
+                    <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class="contacts_button">Send message</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="footer-container">
+            <div class="footer_items">
+                <span>&#169;</span>
+                <span>2022</span>
+                <span><a href="https://github.com/Vitalii2906">github</a></span>
+            </div>
+            <div class="footer_items">
+                <span><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></span>
+            </div>
+            <div class="footer_items">
+                <img src="assets/svg/footer-logos/footer_logo1.svg" alt="logo">
+                <img src="assets/svg/footer-logos/footer_logo2.svg" alt="logo">
+                <img src="assets/svg/footer-logos/footer_logo3.svg" alt="logo">
+                <img src="assets/svg/footer-logos/footer_logo4.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
+    <script src="/portfolio/index.js"></script>
+</body>
+</html>
