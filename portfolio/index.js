@@ -54,6 +54,10 @@ sunBtn.addEventListener('click', () => {
     if(switchBtn.checked) {
         BODY.classList.add('white-bg')
         sunBtn.style.backgroundImage = 'url(assets/img/night-icon.png)'
+        for(let i = 0;i < allText.length;i++) {
+            allText[i].style.color = '#BDAE82'
+        }
+        
     } else {
         BODY.classList.remove('white-bg')
         sunBtn.style.backgroundImage = 'url(assets/svg/carbon_sun.svg)'
