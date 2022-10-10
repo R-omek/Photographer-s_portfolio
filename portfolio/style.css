@@ -4,7 +4,9 @@
   --text__line-height: 36px;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   margin: 0;
@@ -51,6 +53,7 @@ body{
   background-image: url(assets/svg/header-logo.svg);
   background-size: contain;
   transition: 0.3s;
+  margin-right: auto;
 }
 .header_logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
@@ -87,7 +90,7 @@ body{
   font-style: normal;
   font-weight: normal;
   gap: 15px;
-  margin: 20px 30px 20px 0px;
+  margin: 20px 30px 20px auto;
   color: white;
   font-size: 20px;
   width: 70px;
@@ -413,9 +416,6 @@ body{
   background-size: auto 700px;
   background-position: center center;
 }
-.contacts-container {
-  width: 450px;
-}
 .contacts_title {
   color: #BDAE82;
   font-family: Merriweather;
@@ -426,7 +426,7 @@ body{
   margin-bottom: 50px;
 }
 .input_email, .input_tel {
-  width: 445px;
+  width: 100%;
   height: 45px;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #BDAE82;
@@ -444,7 +444,7 @@ body{
 }
 textarea {
   margin-bottom: 20px;
-  width: 440px;
+  width: 100%;
   height: 90px;
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid #BDAE82;
@@ -474,7 +474,7 @@ textarea {
   font-weight: 400;
   font-size: 20px;
   height: 145px;
-  margin: 8px 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 .footer_items {
   display: flex;
@@ -495,7 +495,7 @@ textarea {
   display: none; 
 }
 #menu__toggle {
-  opacity: 0;
+  display: none;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -519,12 +519,11 @@ textarea {
   align-items: center;
   top: 20px;
   left: 20px;
-
-  width: 26px;
+  width: 50px;
   height: 26px;
-
   cursor: pointer;
   z-index: 1;
+  margin-left: 1rem;
 }
 
 .menu__btn > span,
@@ -585,6 +584,10 @@ textarea {
   text-decoration: none;
   cursor: pointer;
   transition-duration: .25s;
+}
+
+.white-bg {
+  background-color: #ffffff !important;
 }
 
 @media (max-width: 768px) {
@@ -651,8 +654,8 @@ textarea {
   .contacts_title {
     text-align: center;
   }
-  .contacts-container button{
-    margin-left: 25%;
+  .contacts-container button {
+    margin-left: 0;
   }
   .footer-container {
     flex-direction: column;
@@ -660,6 +663,32 @@ textarea {
   }
 }
 @media (max-width: 450px){
+  .section-hero {
+    display: flex;
+    align-items: center;
+  }
+  .hero_title{
+    margin: 0;
+    text-align: center;
+  }
+  .hero_text{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .hero_button {
+    margin: 5rem 0;
+  }
+  img {
+    width: 100%;
+  }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 50px;
+  }
+}
+@media (max-width: 375px){
   .hero_title{
     margin: 0;
   }
@@ -668,8 +697,14 @@ textarea {
     width: 100%;
   }
   #contacts{
-    width: 100%;
+    width: 85%;
   }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: -30px;
+  }
+  
 }
 
   
@@ -698,4 +733,13 @@ textarea {
   background-image: url(assets/svg/carbon_sun.svg);
   background-size: contain;
   margin-right: 20px;
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 2000%;
+  background-color: #000;
+  opacity: 0.5;
+  display: none;
 }
