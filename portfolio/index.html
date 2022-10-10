@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="popup"></div>
     <header>
         <div class="container">
             <div class="header-container">
@@ -33,11 +34,11 @@
                             <span></span>
                         </label>
                         <ul class="menu__box">
-                            <li><a class="menu__item" href="#skills">Skills</a></li>
-                            <li><a class="menu__item" href="#portfolio">Portfolio</a></li>
-                            <li><a class="menu__item" href="#video">Video</a></li>
-                            <li><a class="menu__item" href="#price">Price</a></li>
-                            <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                            <li><a onclick="hideMenuBox()" class="menu__item" href="#skills">Skills</a></li>
+                            <li><a onclick="hideMenuBox()" class="menu__item" href="#portfolio">Portfolio</a></li>
+                            <li><a onclick="hideMenuBox()" class="menu__item" href="#video">Video</a></li>
+                            <li><a onclick="hideMenuBox()" class="menu__item" href="#price">Price</a></li>
+                            <li><a onclick="hideMenuBox()" class="menu__item" href="#contacts">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
@@ -147,15 +148,15 @@
             </section>
         </div>
     </main>
-    <footer class="container">
+    <footer class="container" id="footer">
         <div class="footer-container">
             <div class="footer_items">
-                <span>&#169;</span>
-                <span>2022</span>
-                <span><a href="https://github.com/Vitalii2906">github</a></span>
+                <span class="txt_color">&#169;</span>
+                <span class="txt_color">2022</span>
+                <span><a class="txt_color" href="https://github.com/R-omek">github</a></span>
             </div>
             <div class="footer_items">
-                <span><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></span>
+                <span><a class="txt_color" href="https://rs.school/js-stage0/">Rolling Scopes School</a></span>
             </div>
             <div class="footer_items">
                 <img src="assets/svg/footer-logos/footer_logo1.svg" alt="logo">
